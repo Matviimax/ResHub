@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Imprima&family=Jaro:opsz@6..72&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/stiles.css" />
+    <link rel="stylesheet" href="styles/responsiv.css" />
+    <title>ResHub/Home</title>
+  </head>
+  <body>
+    <header>
+      <h2>ResHub</h2>
+      <p>
+        Is a website where you can find a lot of useful information and various
+        applications.
+      </p>
+    </header>
+    <main>
+      <div class="header-nav">
+        <h4><a href="#" class="logo">ResourceHub</a></h4>
+        <div class="nav">
+          <ul>
+            <li><a href="#contacts">about</a></li>
+            <li><a href="#contacts">support</a></li>
+            <li><a href="#contacts">contacts</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="section-items">
+        <!-- Left-Section -->
+
+        <section class="left-section">
+          <!-- menu -->
+          <div class="icon">
+            <button class="icon menu" onclick="toggleMenu()">
+              <svg
+                width="44"
+                height="44"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 4H15V8H3V4Z" fill="currentColor" />
+                <path d="M21 8H17V4H21V8Z" fill="currentColor" />
+                <path d="M3 10H21V14H3V10Z" fill="currentColor" />
+                <path d="M11 16H3V20H11V16Z" fill="currentColor" />
+                <path d="M13 16V20H21V16H13Z" fill="currentColor" />
+              </svg>
+              <p class="icon-text">Menu</p>
+            </button>
+          </div>
+
+          <div class="menu-items-list" id="menuItems">
+            <div class="icon">
+              <a class="activ-icon menu-item" href="#">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21 8.77217L14.0208 1.79299C12.8492 0.621414 10.9497 0.621413 9.77817 1.79299L3 8.57116V23.0858H10V17.0858C10 15.9812 10.8954 15.0858 12 15.0858C13.1046 15.0858 14 15.9812 14 17.0858V23.0858H21V8.77217ZM11.1924 3.2072L5 9.39959V21.0858H8V17.0858C8 14.8767 9.79086 13.0858 12 13.0858C14.2091 13.0858 16 14.8767 16 17.0858V21.0858H19V9.6006L12.6066 3.2072C12.2161 2.81668 11.5829 2.81668 11.1924 3.2072Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <p class="icon-text">Home</p>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a class="icon menu-item" href="menuCategories/design.html">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13 3H21V11H13V3ZM15 5H19V9H15V5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M17 21V13H11V7H3V21H17ZM9 9H5V13H9V9ZM5 19L5 15H9V19H5ZM11 19V15H15V19H11Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <p class="icon-text">Design</p>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a class="icon menu-item" href="menuCategories/money.html">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11 19V22H13V19H14C16.2091 19 18 17.2091 18 15C18 12.7909 16.2091 11 14 11H13V7H15V9H17V5H13V2H11V5H10C7.79086 5 6 6.79086 6 9C6 11.2091 7.79086 13 10 13H11V17H9V15H7V19H11ZM13 17H14C15.1046 17 16 16.1046 16 15C16 13.8954 15.1046 13 14 13H13V17ZM11 11V7H10C8.89543 7 8 7.89543 8 9C8 10.1046 8.89543 11 10 11H11Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <p class="icon-text">Money</p>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a class="icon menu-item" href="menuCategories/coffee.html">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6 2.5C5.44772 2.5 5 2.94772 5 3.5V5.5C5 6.05228 5.44772 6.5 6 6.5C6.55228 6.5 7 6.05228 7 5.5V3.5C7 2.94772 6.55228 2.5 6 2.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M13 21.5C15.973 21.5 18.441 19.3377 18.917 16.5H19C21.2091 16.5 23 14.7091 23 12.5C23 10.2909 21.2091 8.5 19 8.5V7.5H1V15.5C1 18.8137 3.68629 21.5 7 21.5H13ZM3 9.5V15.5C3 17.7091 4.79086 19.5 7 19.5H13C15.2091 19.5 17 17.7091 17 15.5V9.5H3ZM21 12.5C21 13.6046 20.1046 14.5 19 14.5V10.5C20.1046 10.5 21 11.3954 21 12.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M9 3.5C9 2.94772 9.44771 2.5 10 2.5C10.5523 2.5 11 2.94772 11 3.5V5.5C11 6.05228 10.5523 6.5 10 6.5C9.44771 6.5 9 6.05228 9 5.5V3.5Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M14 2.5C13.4477 2.5 13 2.94772 13 3.5V5.5C13 6.05228 13.4477 6.5 14 6.5C14.5523 6.5 15 6.05228 15 5.5V3.5C15 2.94772 14.5523 2.5 14 2.5Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <p class="icon-text">Coffee</p>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a class="icon menu-item" href="menuCategories/itweb.html">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4 8C4.55228 8 5 7.55228 5 7C5 6.44772 4.55228 6 4 6C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M8 7C8 7.55228 7.55228 8 7 8C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6C7.55228 6 8 6.44772 8 7Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10 8C10.5523 8 11 7.55228 11 7C11 6.44772 10.5523 6 10 6C9.44771 6 9 6.44772 9 7C9 7.55228 9.44771 8 10 8Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3 3C1.34315 3 0 4.34315 0 6V18C0 19.6569 1.34315 21 3 21H21C22.6569 21 24 19.6569 24 18V6C24 4.34315 22.6569 3 21 3H3ZM21 5H3C2.44772 5 2 5.44772 2 6V9H22V6C22 5.44772 21.5523 5 21 5ZM2 18V11H22V18C22 18.5523 21.5523 19 21 19H3C2.44772 19 2 18.5523 2 18Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <p class="icon-text">IT-Web</p>
+              </a>
+            </div>
+
+            <div class="icon">
+              <a class="icon menu-item" href="menuCategories/saved.html">
+                <svg
+                  width="44"
+                  height="44"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2 19C2 20.6569 3.34315 22 5 22H19C20.6569 22 22 20.6569 22 19V5C22 3.34315 20.6569 2 19 2H5C3.34315 2 2 3.34315 2 5V19ZM20 19C20 19.5523 19.5523 20 19 20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44772 4 5 4H10V12.0111L12.395 12.0112L14.0001 9.86419L15.6051 12.0112H18.0001L18 4H19C19.5523 4 20 4.44772 20 5V19ZM16 4H12V9.33585L14.0001 6.66046L16 9.33571V4Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <p class="icon-text">Saved</p>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Nain-Section -->
+
+        <section class="main-section">
+          <div class="resurs">
+            <a
+              class="res-link"
+              href="resurs/MeterMaxPro/index.html"
+              target="_blank"
+            >
+              <img src="img/metermaxreshub.png" alt="resurs photo" />
+              <h4>MeterMax</h4>
+              <p>
+                MeterMax This is a program that helps you calculate different
+                units of measurement in different standards, such as inches to
+                centimeters.
+              </p>
+              <a
+                class="open-link"
+                href="resurs/MeterMaxPro/index.html"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource
+              </a>
+            </a>
+          </div>
+          <div class="resurs">
+            <a class="res-link" href="resurs/toptenfd.html" target="_blank">
+              <img src="img/top10fd.webp" alt="resurs photo" />
+              <h4>Front-end developer</h4>
+              <p>
+                A list of 10 useful programs and tools that will help front-end
+                developers work efficiently and improve their skills.
+              </p>
+              <a class="open-link" href="resurs/toptenfd.html" target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource</a
+              >
+            </a>
+          </div>
+          <div class="resurs">
+            <a
+              class="res-link"
+              href="https://www.deepl.com/uk/translator"
+              target="_blank"
+            >
+              <img src="img/deepl-logo-blue.svg" alt="resurs photo" />
+              <h4>DeepL</h4>
+              <p>
+                Transform your international communication with Translate DeepL
+              </p>
+              <a
+                class="open-link"
+                href="https://www.deepl.com/uk/translator"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource</a
+              >
+            </a>
+          </div>
+          <div class="resurs">
+            <a class="res-link" href="https://css.gg/icons" target="_blank">
+              <img src="img/iconres.jpg" alt="resurs photo" />
+              <h4>CSS.gg</h4>
+              <p>
+                Is a library of more than 700 free icons in SVG, CSS and TSX
+                formats that can be customized for any project.
+              </p>
+              <a class="open-link" href="https://css.gg/icons" target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource</a
+              >
+            </a>
+          </div>
+          <div class="resurs">
+            <a
+              class="res-link"
+              href="https://oskarstalberg.com/Townscaper/#GSB0RARueC6Snc9E0lO5B"
+              target="_blank"
+            >
+              <img src="img/tgvid.png" alt="resurs photo" />
+              <h4>Townscaper</h4>
+              <p>
+                click-and-forget simulator for creating your own city. Complete
+                freedom of design, the only thing, the game itself classifies
+                how to combine different elements of the city.
+              </p>
+              <a
+                class="open-link"
+                href="https://oskarstalberg.com/Townscaper/#GSB0RARueC6Snc9E0lO5B"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource</a
+              >
+            </a>
+          </div>
+          <div class="resurs">
+            <a
+              class="res-link"
+              href="https://www.flightradar24.com/25.66,-63.80/4"
+              target="_blank"
+            >
+              <img src="img/flig.png" alt="resurs photo" />
+              <h4>Flightradar24 -</h4>
+              <p>
+                Flight Tracker - Follow airplanes in real time and explore
+                different aircraft models.
+              </p>
+              <a
+                class="open-link"
+                href="https://www.flightradar24.com/25.66,-63.80/4"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource</a
+              >
+            </a>
+          </div>
+        </section>
+
+        <!-- Right-Section -->
+
+        <section class="right-section">
+          <div class="resurs">
+            <a
+              class="res-link"
+              href="https://www.virustotal.com/gui/home/upload"
+              target="_blank"
+            >
+              <img src="img/Virustotal.png" alt="resurs photo" />
+              <h4>Virustotal</h4>
+              <p>
+                Analyse suspicious files, domains, IPs and URLs to detect
+                malware and other breaches, automatically share them with the
+                security community.
+              </p>
+
+              <a
+                class="open-link"
+                href="https://www.virustotal.com/gui/home/upload"
+                target="_blank"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource</a
+              >
+            </a>
+          </div>
+
+          <div class="resurs">
+            <a class="res-link" href="https://pixabay.com/" target="_blank">
+              <img src="/img/pixabay-1095454_1280.jpg" alt="resurs photo" />
+              <h4>Pixabay</h4>
+              <p>
+                Stunning royalty-free images & royalty-free stock Over 5.1
+                million+ high quality stock images, videos and music.
+              </p>
+              <a class="open-link" href="https://pixabay.com/" target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.6396 7.02527H12.0181V5.02527H19.0181V12.0253H17.0181V8.47528L12.1042 13.3892L10.6899 11.975L15.6396 7.02527Z"
+                    fill="currentColor"
+                  />
+                  <path
+                    d="M10.9819 6.97473H4.98193V18.9747H16.9819V12.9747H14.9819V16.9747H6.98193V8.97473H10.9819V6.97473Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                Open a resource</a
+              >
+            </a>
+          </div>
+          <div class="resurs-two">
+            <div class="resurs res-smoll">
+              <h4>Rate our website.</h4>
+              <p>Please add your tips on how to improve this service.</p>
+              <button class="open-link open-btn-theer" onclick="openModal()">
+                Rate
+              </button>
+            </div>
+            <div class="resurs res-smoll">
+              <a class="res-link" href="comsoon.html">
+                <h4>ResHub</h4>
+                <p>
+                  Is a website where you can find a lot of useful information
+                  and various applications.
+                </p>
+                <a class="open-link open-btn-theer" href="comsoon.html">
+                  to support</a
+                >
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="about-res">
+        <h5>ResHub</h5>
+        <p>
+          <b>Always</b> what <br />
+          you <b>need</b> !
+        </p>
+      </div>
+
+      <div>
+        <p>About us</p>
+        <a href="#">Studio</a><a href="#">About Project</a
+        ><a href="#">Terms of use</a>
+      </div>
+
+      <div id="contacts">
+        <p>Contacts / Support</p>
+        <a href="#">Email</a><a href="#">Instagram</a
+        ><a href="https://t.me/reshubbot" target="_blank">Telegram</a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+
+    <div id="modalWindow" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <p>Would you like to rate this site?</p>
+        <div class="modal-footer">
+          <button class="btn-style" onclick="btnModal()">Yes!</button>
+          <button class="btn-style" onclick="closeModal()">No!</button>
+        </div>
+        <div id="modalComent" class="modal-coment">
+          <p>Leave your tips here</p>
+          <a href="#" onclick="closeModal()">Email</a>
+          <a href="#" onclick="closeModal()">Instagram</a>
+          <a
+            href="https://t.me/reshubbot"
+            target="_blank"
+            onclick="closeModal()"
+            >Telegram</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

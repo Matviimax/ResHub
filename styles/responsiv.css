@@ -1,0 +1,70 @@
+@media (max-width: 1200px) {
+  .right-section {
+    grid-column: 1 / 4;
+    grid-row: 2 /3;
+  }
+
+  .main-section {
+    grid-column: 1 / 4;
+  }
+}
+
+@media (max-width: 800px) {
+  header h2 {
+    font-size: 24px;
+  }
+
+  header p {
+    font-size: 18px;
+    color: #ccc;
+    width: 60%;
+  }
+
+  .section-items {
+    grid-template-columns: 60px auto auto;
+  }
+
+  .resurs {
+    width: 300px;
+    height: 400px;
+  }
+
+  .res-smoll {
+    width: 300px;
+    height: 160px;
+  }
+
+  .resurs img {
+    height: 200px;
+  }
+
+  .resurs h4 {
+    font-size: 24px;
+  }
+
+  .resurs p {
+    font-size: 18px;
+  }
+
+  .resurs .open-link {
+    font-size: 16px;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu-items-list {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .modal-content {
+    width: 90%;
+  }
+}

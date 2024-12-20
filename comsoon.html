@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Development</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="text">
+      <h1>404</h1>
+      <svg
+        width="320"
+        height="320"
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M5.0333 14.8284L6.44751 16.2426L10.6902 12L6.44751 7.75733L5.0333 9.17155L7.86172 12L5.0333 14.8284Z"
+          fill="currentColor"
+        />
+        <path class="line" d="M18 14H11V16H19V14Z" fill="currentColor" />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2 2C0.895431 2 0 2.89543 0 4V20C0 21.1046 0.89543 22 2 22H22C23.1046 22 24 21.1046 24 20V4C24 2.89543 23.1046 2 22 2H2ZM22 4H2L2 20H22V4Z"
+          fill="currentColor"
+        />
+      </svg>
+    </div>
+    <div class="ppar">
+      <p>This page is temporarily unavailable, please try again later...</p>
+      <a href="index.html">go back</a>
+    </div>
+
+    <style>
+      *::selection {
+        background-color: rgba(255, 204, 0, 0.71);
+        color: black;
+      }
+
+      body {
+        background-color: black;
+        position: relative;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: darkgoldenrod;
+      }
+
+      svg {
+        margin: 5%;
+      }
+
+      .line {
+        opacity: 0;
+        animation: fadeInOut 2s infinite;
+      }
+
+      h1 {
+        font-family: "Roboto", serif;
+        font-weight: 800;
+        font-size: 60px;
+        font-style: normal;
+        position: absolute;
+        padding-left: 80px;
+        animation: fadeInOut 2s infinite;
+      }
+
+      .ppar {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+      }
+
+      p {
+        font-family: "Roboto", serif;
+        font-weight: 400;
+        font-size: 30px;
+        font-style: normal;
+        color: darkgoldenrod;
+      }
+
+      a {
+        font-family: "Roboto", serif;
+        font-weight: 200;
+        font-size: 40px;
+        font-style: normal;
+        color: #ccc;
+        transition: color 0.3s ease;
+      }
+
+      a:hover {
+        color: #555;
+      }
+
+      @keyframes fadeInOut {
+        0% {
+          opacity: 0; /* Початок: прозорий */
+        }
+        50% {
+          opacity: 1; /* На півшляху: видимий */
+        }
+        100% {
+          opacity: 0; /* Кінець: знову прозорий */
+        }
+      }
+    </style>
+  </body>
+</html>

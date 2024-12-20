@@ -1,0 +1,45 @@
+@media (max-width: 768px) {
+  .container {
+    width: auto;
+    margin: 0 20px;
+  }
+
+  input {
+    font-size: 22px;
+  }
+
+  label {
+    font-size: 20px;
+  }
+
+  .rate:hover {
+    transform: none;
+  }
+
+  .rate:active {
+    transform: scale(1.02);
+  }
+}
+
+@media (max-width: 400px) {
+  .lang {
+    display: block;
+  }
+
+  .forms1 {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 330px) {
+  input {
+    width: auto;
+    font-size: 20px;
+  }
+
+  label {
+    font-size: 20px;
+    text-align: left;
+  }
+}

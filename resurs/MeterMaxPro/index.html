@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>MeterMax</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header></header>
+      <div class="container">
+        <div class="about">
+          <h1>MeterMax</h1>
+          <p>
+            MeterMax This is a program that helps you calculate different units
+            of measurement in different standards, such as inches to centimeters
+          </p>
+        </div>
+
+        <!-- ---------- Length ---------- -->
+
+        <div class="blok length active">
+          <div class="title" onclick="toggleAccordion()">
+            Length <span class="toggle-btn">+</span>
+          </div>
+          <div class="content">
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="inch">inch:</label>
+                <input
+                  type="number"
+                  name="inch"
+                  id="inch"
+                  oninput="convertToCm()"
+                  placeholder="Enter inches"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="centimeter">centimeter:</label>
+                <input
+                  type="number"
+                  name="centimeter"
+                  id="centimeter"
+                  oninput="convertToInch()"
+                  placeholder="Enter centimeter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="foot">foot:</label>
+                <input
+                  type="number"
+                  name="foot"
+                  id="foot"
+                  oninput="convertToCmf()"
+                  placeholder="Enter foot"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="centimeterf">centimeter:</label>
+                <input
+                  type="number"
+                  name="centimeterf"
+                  id="centimeterf"
+                  oninput="convertToFoot()"
+                  placeholder="Enter centimeter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="yard">yard:</label>
+                <input
+                  type="number"
+                  name="yard"
+                  id="yard"
+                  oninput="convertToMt()"
+                  placeholder="Enter yard"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="meter">meter:</label>
+                <input
+                  type="number"
+                  name="meter"
+                  id="meter"
+                  oninput="convertToYard()"
+                  placeholder="Enter meter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="mile">mile:</label>
+                <input
+                  type="number"
+                  name="mile"
+                  id="mile"
+                  oninput="convertToKm()"
+                  placeholder="Enter mile"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="kilometer">kilometer:</label>
+                <input
+                  type="number"
+                  name="kilometer"
+                  id="kilometer"
+                  oninput="convertToMile()"
+                  placeholder="Enter kilometer"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Area ---------- -->
+
+        <div class="blok area">
+          <div class="title" onclick="toggleAccordion()">
+            Area <span class="toggle-btn">+</span>
+          </div>
+          <div class="content">
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="square-inch">square inch:</label>
+                <input
+                  type="number"
+                  name="square-inch"
+                  id="square-inch"
+                  oninput="convertToSqCm()"
+                  placeholder="Enter square inch"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="square-centimeter">square centimeter:</label>
+                <input
+                  type="number"
+                  name="square-centimeter"
+                  id="square-centimeter"
+                  oninput="convertToSqInch()"
+                  placeholder="Enter square centimeter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="square-foot">square foot:</label>
+                <input
+                  type="number"
+                  name="square-foot"
+                  id="square-foot"
+                  oninput="convertToSqMtf()"
+                  placeholder="Enter square foot"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="square-meterf">square meter:</label>
+                <input
+                  type="number"
+                  name="square-meterf"
+                  id="square-meterf"
+                  oninput="convertToSqFoot()"
+                  placeholder="Enter square meter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="square-yard">square yard:</label>
+                <input
+                  type="number"
+                  name="square-yard"
+                  id="square-yard"
+                  oninput="convertToSqMty()"
+                  placeholder="Enter square yard"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="square-metery">square meter:</label>
+                <input
+                  type="number"
+                  name="square-metery"
+                  id="square-metery"
+                  oninput="convertToSqYard()"
+                  placeholder="Enter square meter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="acre">acre:</label>
+                <input
+                  type="number"
+                  name="acre"
+                  id="acre"
+                  oninput="convertToSqMta()"
+                  placeholder="Enter acre"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="square-metera">square meter:</label>
+                <input
+                  type="number"
+                  name="square-metera"
+                  id="square-metera"
+                  oninput="convertToSqAcre()"
+                  placeholder="Enter square meter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="square-mile">square mile:</label>
+                <input
+                  type="number"
+                  name="square-mile"
+                  id="square-mile"
+                  oninput="convertToSqKm()"
+                  placeholder="Enter square mile"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="square-kilometer">square kilometer:</label>
+                <input
+                  type="number"
+                  name="square-kilometer"
+                  id="square-kilometer"
+                  oninput="convertToSqMile()"
+                  placeholder="Enter square kilometer"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Volume (liquid) ---------- -->
+
+        <div class="blok volume">
+          <div class="title" onclick="toggleAccordion()">
+            Volume <span class="li">(liquid)</span>
+            <span class="toggle-btn">+</span>
+          </div>
+          <div class="content">
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="fluid-ounce">fluid ounce:</label>
+                <input
+                  type="number"
+                  name="fluid-ounce"
+                  id="fluid-ounce"
+                  oninput="convertToMlf()"
+                  placeholder="Enter fluid ounce"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="milliliterf">milliliter:</label>
+                <input
+                  type="number"
+                  name="milliliterf"
+                  id="milliliterf"
+                  oninput="convertToFlu()"
+                  placeholder="Enter milliliter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="cup">cup:</label>
+                <input
+                  type="number"
+                  name="cup"
+                  id="cup"
+                  oninput="convertToMlc()"
+                  placeholder="Enter cup"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="milliliterc">milliliter:</label>
+                <input
+                  type="number"
+                  name="milliliterc"
+                  id="milliliterc"
+                  oninput="convertToCup()"
+                  placeholder="Enter milliliter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="pint">pint:</label>
+                <input
+                  type="number"
+                  name="pint"
+                  id="pint"
+                  oninput="convertToMlp()"
+                  placeholder="Enter pint"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="milliliterp">milliliter:</label>
+                <input
+                  type="number"
+                  name="milliliterp"
+                  id="milliliterp"
+                  oninput="convertToPint()"
+                  placeholder="Enter milliliter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="quart">quart:</label>
+                <input
+                  type="number"
+                  name="quart"
+                  id="quart"
+                  oninput="convertToLtq()"
+                  placeholder="Enter quart"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="literq">liter:</label>
+                <input
+                  type="number"
+                  name="literq"
+                  id="literq"
+                  oninput="convertToQuart()"
+                  placeholder="Enter liter"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="gallon">gallon:</label>
+                <input
+                  type="number"
+                  name="gallon"
+                  id="gallon"
+                  oninput="convertToLig()"
+                  placeholder="Enter gallon"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="literg">liter:</label>
+                <input
+                  type="number"
+                  name="literg"
+                  id="literg"
+                  oninput="convertToGallon()"
+                  placeholder="Enter liter"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Mass/Weight ---------- -->
+
+        <div class="blok mass-weight">
+          <div class="title" onclick="toggleAccordion()">
+            Mass/Weight <span class="toggle-btn">+</span>
+          </div>
+          <div class="content">
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="ounce">ounce:</label>
+                <input
+                  type="number"
+                  name="ounce"
+                  id="ounce"
+                  oninput="convertToGram()"
+                  placeholder="Enter ounce"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="gram">gram:</label>
+                <input
+                  type="number"
+                  name="gram"
+                  id="gram"
+                  oninput="convertToOunce()"
+                  placeholder="Enter gram"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="pound">pound:</label>
+                <input
+                  type="number"
+                  name="pound"
+                  id="pound"
+                  oninput="convertToKgk()"
+                  placeholder="Enter pound"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="kilogramk">kilogram:</label>
+                <input
+                  type="number"
+                  name="kilogramk"
+                  id="kilogramk"
+                  oninput="convertToPound()"
+                  placeholder="Enter kilogram"
+                />
+              </form>
+            </div>
+
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="ton">ton:</label>
+                <input
+                  type="number"
+                  name="ton"
+                  id="ton"
+                  oninput="convertToKgt()"
+                  placeholder="Enter ton"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="kilogramt">kilogram:</label>
+                <input
+                  type="number"
+                  name="kilogramt"
+                  id="kilogramt"
+                  oninput="convertToTon()"
+                  placeholder="Enter kilogram"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Temperature ---------- -->
+
+        <div class="blok temperature">
+          <div class="title" onclick="toggleAccordion()">
+            Temperature <span class="toggle-btn">+</span>
+          </div>
+          <div class="content">
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="fahrenheit">°F:</label>
+                <input
+                  type="number"
+                  name="fahrenheit"
+                  id="fahrenheit"
+                  oninput="convertToC()"
+                  placeholder="Enter °F"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="grad">°C:</label>
+                <input
+                  type="number"
+                  name="grad"
+                  id="grad"
+                  oninput="convertToF()"
+                  placeholder="Enter °C"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Other ---------- -->
+
+        <div class="blok other">
+          <div class="title" onclick="toggleAccordion()">
+            Other <span class="toggle-btn">+</span>
+          </div>
+          <div class="content">
+            <div class="lang">
+              <form action="" class="forms1">
+                <label for="mpg">mpg:</label>
+                <input
+                  type="number"
+                  name="mpg"
+                  id="mpg"
+                  oninput="convertToMpg()"
+                  placeholder="Enter mpg"
+                />
+              </form>
+              <form action="" class="forms1">
+                <label for="literspro">liters/100km:</label>
+                <input
+                  type="number"
+                  name="literspro"
+                  id="literspro"
+                  oninput="convertToLiters()"
+                  placeholder="Enter liters"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------- Rate ---------- -->
+
+        <div class="opendown">
+          <div class="blok rate">
+            <a href="us_to_metric_units.pdf" target="_blank">
+              <h4>Open the table</h4>
+              <!-- <p>⊚ Click to open</p> -->
+            </a>
+          </div>
+          <div class="blok rate">
+            <a href="us_to_metric_units.pdf" download="us_to_metric_units">
+              <h4>Download the table</h4>
+              <!-- <p>⊚ Click to download</p> -->
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
